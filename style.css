@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+    background: #10131C;
+    color: #fff;
+}
+header {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 7EM;
+}
+.card {
+    text-align: center;
+    width: 350px;
+    height: 260px;
+    background-color: #212121;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+   }
+   
+   .card:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.05);
+   }
+   
+   .input {
+    color: #FFF;
+    margin: 1em;
+    background-color: #212121;
+    max-width: 100px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  
+  .input:focus {
+    color: #FBCA1F;
+    background-color: #212121;
+    outline-color: #FBCA1F;
+    box-shadow: -3px -3px 10px #FBCA1F;
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+button {
+    margin: 0.8em;
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+   }
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h2{
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.footer-content p{
+    font-size: 1.2rem;
+}

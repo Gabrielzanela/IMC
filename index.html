@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>IMC</title>
+</head>
+<header>
+    <h2>Calcule seu IMC!!</h2>
+</header>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card2">
+         <div class="altura">
+            <input placeholder="Altura (M)" type="number" class="input" id="altura">
+            <input placeholder="Peso (Kg)" type="number" class="input" id="peso">
+      </div>
+      <button onclick="calcIMC()" class="btn">Resultado</button>
+      <span id="resultado"></span>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <h2>SENAI 2-A</h2>
+            <p>Gabriel</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
